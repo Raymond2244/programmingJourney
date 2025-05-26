@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Nav</h2>
+      <p>Basic horizontal menu:</p>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Link 3 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="container">
+      <h2>Nav</h2>
+      <h6>Left-aligned nav (default):</h6>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+      <br />
+      <h6 class="text-center">Centered nav</h6>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+      <br />
+      <h6 class="text-center">Right-aligned nav:</h6>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+      <br />
+      <h6>
+        Add the .flex-column class to the "ul" attribute to create a vertical
+        nav
+      </h6>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+        <br />
+        <h6>
+          Turn the nav menu into navigation tabs with the .nav-tabs. add the
+          .active class to the active/current link. If you want the tabs to be
+          togglable, see the last example on this page
+        </h6>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <br />
+          <br />
+          <br />
+          <h6>
+            Turn the nav menu into navigation pills with the .nav-pills class.
+            If you want the pills to be toggleable, see the last example on this
+            page.
+          </h6>
+          <ul class="nav nav-pills">
+            <li class="nav-items">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+    <br />
+    <div class="container">
+      <h2>Justified Tabs/Pills</h2>
+      <p>To justify tabs/pills (equall width), use the .nav-justified class:</p>
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <br />
+      <h6>Justified tabs:</h6>
+      <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="container">
+      <h2>Pills with Dropdown</h2>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+            >Dropdown</a
+          >
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2>Tabs with dropdown</h2>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+            >Dropdown</a
+          >
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="container">
+      <h2>Toggleable Tabs</h2>
+      <br />
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home" class="container tab-pane active">
+          <br />
+          <h3>Home</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            voluptatem dolorum quis dolores quasi odio officiis, deserunt
+            corrupti omnis repellat pariatur aspernatur fugit, dicta consectetur
+            dignissimos inventore est sint! Distinctio?
+          </p>
+        </div>
+        <div id="menu1" class="container tab-pane fade">
+          <br />
+          <h3>Menu 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            nemo, repellat nam, quisquam, magnam unde modi nostrum ipsum
+            temporibus vel assumenda autem necessitatibus architecto culpa?
+            Nulla sint numquam labore quia?
+          </p>
+        </div>
+        <div id="menu2" class="container tab-pane fade">
+          <br />
+          <h3>Menu 2</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+            ex illum! Alias rem laboriosam quae? Repudiandae sit accusantium
+            nostrum maiores perferendis quos molestias enim suscipit, soluta
+            rerum tempore ex? Voluptatem.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <h2>Toggleable Pills</h2>
+      <br />
+      <!-- Nav pills -->
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#menu11">Menu 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#menu22">Menu 2</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home" class="container tab-pane active">
+          <br />
+          <h3>HOME</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+            incidunt veritatis qui sed ab iste et sapiente! Perspiciatis at
+            soluta vel molestiae, praesentium mollitia rerum, esse veritatis
+            alias delectus cupiditate.
+          </p>
+        </div>
+        <div id="menu11" class="container tab-pane fade">
+          <br />
+          <h3>Menu 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            pariatur, deleniti ratione error iure reiciendis numquam obcaecati
+            similique exercitationem nam! Pariatur hic placeat beatae
+            voluptatibus non quod commodi, nihil incidunt.ss
+          </p>
+        </div>
+        <div id="menu22" class="container tab-pane fade">
+          <br />
+          <h3>Menu 2</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+            amet cupiditate nisi eum quod modi eius deserunt sequi omnis? Dolore
+            ab sequi asperiores! Iste totam amet eligendi beatae. Non, at!
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>

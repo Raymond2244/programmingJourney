@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap example</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Simple Collapsible</h2>
+      <p>Click on the button to toggle between showing and hiding content.</p>
+      <button
+        type="buttton"
+        class="btn btn-primary"
+        data-toggle="collapse"
+        data-target="#demo"
+      >
+        Simple collapsible
+      </button>
+      <div id="demo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non distinctio
+        eos corrupti neque autem nam quasi aliquid, assumenda cum suscipit ab et
+        alias facilis reprehenderit blanditiis. Laboriosam nostrum provident
+        dicta.
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <h2>Simple collapsible</h2>
+      <p>Usind the "a" attribute</p>
+      <a href="#emo" class="btn btn-primary" data-toggle="collapse"
+        >Simple collapsible
+      </a>
+      <div id="emo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+        recusandae adipisci sed corrupti? Dolorem facilis, eaque, quasi
+        blanditiis temporibus cupiditate voluptates aspernatur vero nostrum
+        delectus animi. Odit dolorem similique aut!
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <h2>Show collapsible content by default</h2>
+      <p>
+        Add the show class next to the collapse class to show the content by
+        defualt.
+      </p>
+      <p>Click on the button to toggle between showing and hiding content.</p>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="collapse"
+        data-target="#hit"
+      >
+        Simple collapsible
+      </button>
+      <div id="hit" class="collapse show">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero
+        dolore ipsam dicta optio aliquam, ad, nostrum accusantium at et eligendi
+        pariatur quos exercitationem. Officiis minus eligendi aliquam corrupti
+        repellendus?
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <h2>Accordion Example</h2>
+      <p>
+        <strong>Note:</strong>The<strong>data-parent</strong>attribute makes
+        sure that all collapsible elements under the specified parent will be
+        closed when one of the collapsible item is shown.
+      </p>
+      <div class="container">
+        <h2>Accordion Example</h2>
+        <p>
+          <strong>Note:</strong>The<strong>data-parent</strong>attribute makes
+          sure that all collapsible elements under the specified parent will be
+          closed when one of the collapsible item is shown.
+        </p>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseone"
+                >Collapsible Group Item #1</a
+              >
+            </div>
+            <div
+              id="collapseone"
+              class="collapse show"
+              data-parent="#accordion"
+            >
+              <div
+                id="collapseone"
+                class="collapse show"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+                  eligendi quibusdam maiores voluptatem suscipit iure non enim,
+                  commodi totam alias recusandae ducimus earum expedita maxime,
+                  numquam ratione aliquam reiciendis? Ratione?
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a
+                  class="collapsed card-link"
+                  data-toggle="collapse"
+                  href="#collapsetwo"
+                  >Collapsible Group Item2</a
+                >
+              </div>
+              <div id="collapsetwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                  officia incidunt quam necessitatibus eaque esse voluptatibus
+                  reprehenderit quia aspernatur quae ipsam saepe velit, nobis
+                  corporis porro neque sapiente dolore ducimus.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a
+                  class="collapsed card-link"
+                  data-toggle="collapse"
+                  href="#collapsethree"
+                  >Collapsible Group Item #3</a
+                >
+              </div>
+              <div id="collapsethree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                  nobis sed recusandae eveniet aliquam iste rerum quibusdam
+                  commodi, eum quos explicabo accusantium incidunt voluptas
+                  necessitatibus earum eius nulla sint minus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
