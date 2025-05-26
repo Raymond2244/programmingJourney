@@ -1,0 +1,79 @@
+/* 
+---01 TYPOGRAPHY SYSTEM
+
+-- FONT SIZE (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--FONT WEIGHT:
+Default:400
+Meduim:500
+Semi-Bold:600
+Bold:700
+
+-- LINE HEIGHT: 
+Defualt: 1
+Small: 1.05
+medium 1.2
+large: 1.8
+ Paragraph defaut: 1.6
+
+--Letter spacing
+0.5px
+0.75px
+
+--02 COLORS
+
+-- Primary:  #2ecc71
+-- Tints:
+
+
+-- Shades: 
+--Accents:
+-- Greys:#555 #333 #6f6f6f #888 #767676
+
+--05 SHADOWS
+
+--06 BORDER-RADIUS
+default: 9px
+Meduim: 11px
+
+--07 WHITR SPACE
+
+-- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Re-usuable */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.primary-heading {
+}
+.secondary-heading {
+}
+
+.btn {
+}
