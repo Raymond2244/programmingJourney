@@ -1,3 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 72.5%;
+}
 .navcolorBg {
   background: #2ecc71;
 }
@@ -23,6 +31,16 @@ body {
   font-weight: 700;
   line-height: 1.05;
   color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 3.8rem;
+}
+.section-hero {
+  background-color: #d5f5e3;
 }
 
 .row {
